@@ -7,7 +7,7 @@
 
 let pronoun = ['the', 'our', 'my', 'your'];
 let adj = ['great', 'big', 'greatest', 'magic'];
-let noun = ['jogger', 'racoon', 'flash', 'batman'];
+let noun = ['jogger', 'racoon', 'flash', 'romario'];
 let domain = ['.com', '.net', '.us', '.io'];
 
 
@@ -20,11 +20,20 @@ for (let i = 0; i <= 3; i++) {
       let domainNoun = noun[k];
       for (let m = 0; m <= 3; m++) {
         let domainDomain = domain[m];
-        console.log(` ${domainName}${domainAdj}${domainNoun}${domainDomain} `); 
+        if (domainNoun === 'romario') {
+          if (domainDomain === '.io') {
+            console.log(` ${domainName}${domainAdj}romar${domainDomain} `);
+          } 
+          
+        } else {
+            console.log(` ${domainName}${domainAdj}${domainNoun}${domainDomain} `);
+          }
+
+
       }
-    }
+    } 
   }
-  
+
 }
 
 
