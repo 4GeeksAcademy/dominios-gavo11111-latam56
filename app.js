@@ -12,28 +12,24 @@ let domain = ['.com', '.net', '.us', '.io'];
 
 
 
-for (let i = 0; i <= 3; i++) {
+for (let i = 0; i <= pronoun.length -1; i++) {
   let domainName = pronoun[i];
-  for (let j = 0; j <= 3; j++) {
+  for (let j = 0; j <= adj.length -1; j++) {
     let domainAdj = adj[j];
-    for (let k = 0; k <= 3; k++) {
+    for (let k = 0; k <= noun.length -1; k++) {
       let domainNoun = noun[k];
-      for (let m = 0; m <= 3; m++) {
+      for (let m = 0; m <= domain.length -1; m++) {
         let domainDomain = domain[m];
         if (domainNoun === 'romario') {
           if (domainDomain === '.io') {
             console.log(` ${domainName}${domainAdj}romar${domainDomain} `);
-          } 
-          
-        } else {
-            console.log(` ${domainName}${domainAdj}${domainNoun}${domainDomain} `);
           }
-
-
+        } else {
+          console.log(` ${domainName}${domainAdj}${domainNoun}${domainDomain} `);
+        }
       }
-    } 
+    }
   }
-
 }
 
 
